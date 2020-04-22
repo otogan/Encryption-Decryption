@@ -95,6 +95,27 @@ files:
         }
     }
   learner_created: false
+- name: src/encryptdecrypt/Main.java
+  visible: true
+  text: |
+    package encryptdecrypt;
+
+    import java.util.HashMap;
+
+    public class Main {
+        public static void main(String[] args) {
+            char[] message = "we found a treasure!".toCharArray();
+            HashMap<Character, Character> encrypt = new HashMap<>();
+            for (byte i = 0; i < 26; i++) {
+                encrypt.put((char)('a' + i), (char)('z' - i));
+            }
+            for (int i = 0; i < message.length; i++) {
+                message[i] = encrypt.getOrDefault(message[i], message[i]);
+            }
+            System.out.println(String.valueOf(message));
+        }
+    }
+  learner_created: true
 feedback_link: https://hyperskill.org/projects/46/stages/246/implement
-status: Unchecked
-record: -1
+status: Solved
+record: 2
