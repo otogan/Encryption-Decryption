@@ -110,6 +110,58 @@ files:
         }
     }
   learner_created: false
+- name: src/encryptdecrypt/Main.java
+  visible: true
+  text: |+
+    package encryptdecrypt;
+
+    import java.util.Arrays;
+    import java.util.HashMap;
+    import java.util.Objects;
+    import java.util.Scanner;
+
+    public class Main {
+        public static void main(String[] args) {
+            String mode = checkArgs(args, "-mode", "enc").toLowerCase();
+            int key = Integer.parseInt(checkArgs(args, "-key", "0"));
+            char[] data = checkArgs(args, "-data", "").toCharArray();
+
+    //        Scanner scanner = new Scanner(System.in);
+
+            if (Objects.equals(mode, "enc")) {
+                for (int i = 0; i < data.length; i++) {
+                    data[i] = (char)(data[i] + key);
+                }
+            } else {
+                for (int i = 0; i < data.length; i++) {
+                    data[i] = (char)(data[i] - key);
+                }
+            }
+            System.out.println(String.valueOf(data));
+        }
+
+        private static String checkArgs(String[] args, String arg) {
+            return checkArgs(args, arg, null);
+        }
+
+        private static String checkArgs(String[] args, String arg, String defaultValue) {
+            var iterator = Arrays.stream(args).iterator();
+            String value = defaultValue;
+            while (iterator.hasNext()) {
+                String next = iterator.next();
+                if (Objects.equals(arg, next) && iterator.hasNext()) {
+                    value = iterator.next();
+                    break;
+                }
+            }
+            return value;
+        }
+    }
+
+  learner_created: true
+- name: output.txt
+  visible: true
+  learner_created: true
 feedback_link: https://hyperskill.org/projects/46/stages/249/implement
-status: Unchecked
+status: Solved
 record: -1

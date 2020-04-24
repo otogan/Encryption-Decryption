@@ -75,6 +75,35 @@ files:
         }
     }
   learner_created: false
+- name: src/encryptdecrypt/Main.java
+  visible: true
+  text: |
+    package encryptdecrypt;
+
+    import java.util.HashMap;
+    import java.util.Objects;
+    import java.util.Scanner;
+
+    public class Main {
+        public static void main(String[] args) {
+            Scanner scanner = new Scanner(System.in);
+            String operation = scanner.nextLine().toLowerCase();
+            char[] message = scanner.nextLine().toCharArray();
+            int key = scanner.nextInt();
+
+            if (Objects.equals(operation, "enc")) {
+                for (int i = 0; i < message.length; i++) {
+                    message[i] = (char)(message[i] + key);
+                }
+            } else {
+                for (int i = 0; i < message.length; i++) {
+                    message[i] = (char)(message[i] - key);
+                }
+            }
+            System.out.println(String.valueOf(message));
+        }
+    }
+  learner_created: true
 feedback_link: https://hyperskill.org/projects/46/stages/248/implement
-status: Unchecked
-record: -1
+status: Solved
+record: 4
