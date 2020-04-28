@@ -12,9 +12,15 @@
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/Encryption-Decryption/task" />
+            <option value="$PROJECT_DIR$/Problems/Clock factory" />
             <option value="$PROJECT_DIR$/Problems/Exactly one parameter is positive" />
+            <option value="$PROJECT_DIR$/Problems/Groundhogs at a party" />
             <option value="$PROJECT_DIR$/Problems/IntBinaryOperation" />
+            <option value="$PROJECT_DIR$/Problems/Max and Min" />
+            <option value="$PROJECT_DIR$/Problems/Motor static factory" />
+            <option value="$PROJECT_DIR$/Problems/Pick your team" />
             <option value="$PROJECT_DIR$/Problems/Shape hierarchy" />
+            <option value="$PROJECT_DIR$/Problems/Static factory methods for Time" />
             <option value="$PROJECT_DIR$/Problems/Users and WebSites" />
             <option value="$PROJECT_DIR$/util" />
           </set>
