@@ -25,7 +25,7 @@
       </configuration>
     </facet>
   </component>
-  <component name="NewModuleRootManager">
+  <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_11">
     <output url="file://$MODULE_DIR$/../../../../Problems/Users and WebSites/out/production/classes" />
     <exclude-output />
     <content url="file://$MODULE_DIR$/../../../../Problems/Users and WebSites/src">
