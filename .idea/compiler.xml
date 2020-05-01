@@ -1,35 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="CompilerConfiguration">
-    <bytecodeTargetLevel target="11">
-      <module name="Encryption-Decryption-task_main" target="11" />
-      <module name="Encryption-Decryption-task_test" target="11" />
-      <module name="Problems-Clock_factory_main" target="11" />
-      <module name="Problems-Clock_factory_test" target="11" />
-      <module name="Problems-Complete_a_class_main" target="11" />
-      <module name="Problems-Complete_a_class_test" target="11" />
-      <module name="Problems-Complete_the_eager_singleton_main" target="11" />
-      <module name="Problems-Complete_the_eager_singleton_test" target="11" />
-      <module name="Problems-Exactly_one_parameter_is_positive_main" target="11" />
-      <module name="Problems-Exactly_one_parameter_is_positive_test" target="11" />
-      <module name="Problems-Groundhogs_at_a_party_main" target="11" />
-      <module name="Problems-Groundhogs_at_a_party_test" target="11" />
-      <module name="Problems-IntBinaryOperation_main" target="11" />
-      <module name="Problems-IntBinaryOperation_test" target="11" />
-      <module name="Problems-Max_and_Min_main" target="11" />
-      <module name="Problems-Max_and_Min_test" target="11" />
-      <module name="Problems-Motor_static_factory_main" target="11" />
-      <module name="Problems-Motor_static_factory_test" target="11" />
-      <module name="Problems-Pick_your_team_main" target="11" />
-      <module name="Problems-Pick_your_team_test" target="11" />
-      <module name="Problems-Shape_hierarchy_main" target="11" />
-      <module name="Problems-Shape_hierarchy_test" target="11" />
-      <module name="Problems-Static_factory_methods_for_Time_main" target="11" />
-      <module name="Problems-Static_factory_methods_for_Time_test" target="11" />
-      <module name="Problems-Users_and_WebSites_main" target="11" />
-      <module name="Problems-Users_and_WebSites_test" target="11" />
-      <module name="util_main" target="11" />
-      <module name="util_test" target="11" />
-    </bytecodeTargetLevel>
+    <bytecodeTargetLevel target="11" />
   </component>
 </project>

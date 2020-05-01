@@ -25,8 +25,8 @@ class Time {
     public static Time ofSeconds(long seconds) {
         // write your code here
         long longHours = seconds / 3600;
-        int hours = (int) (longHours % 24);
-        int iSeconds = (int) (seconds % 3600);
+        int hours = (int)(longHours % 24);
+        int iSeconds = (int)(seconds % 3600);
         int minutes = iSeconds / 60;
         iSeconds = iSeconds % 60;
         return new Time(hours, minutes, iSeconds);
@@ -36,9 +36,8 @@ class Time {
         // write your code here
         if (hour < 0 || 23 < hour ||
                 minute < 0 || 59 < minute ||
-                second < 0 || 59 < second) {
+                second < 0 || 59 < second)
             return null;
-        }
         return new Time(hour, minute, second);
     }
 }
